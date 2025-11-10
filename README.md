@@ -92,8 +92,7 @@ Include a `README.md` describing:
 - API integration and error simulation
 - Browser persistence (what, why, and how)
 - Loading and error states (with screenshots)
-- Major problems encountered and learnings
-- **At least 3 screenshots** with your student ID visible in the UI or console
+- **Major problems encountered and learnings**
 
 ### 10. Deployment
 

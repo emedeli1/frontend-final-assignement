@@ -152,6 +152,8 @@ Include a `README.md` describing:
 
 This can help you to render things through JS more easily (instead of having to create everything with DOM Nodes in your JS)
 
+- use the icons given to you in the base assets, transform them into an iconfont (as shown in the lecture) and use them in your code that way (grants bonuspoints)
+
 ## Submission Checklist
 
 - Source code in a public or private repository with correct permissions set for me to view

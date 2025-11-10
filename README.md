@@ -77,12 +77,15 @@ todo: add link
 
 - **Detail Pages**
 
-  - Display full details when clicking on a teaser from the portal or overview pages.
+  - Display full details when clicking on a teaser from the portal or overview pages. (should mirror the design)
 
 - **Complete Data Display**
 
-  - Show all available information for each teaser and on detail pages where provided.
+  - Show all available information for each teaser and on detail pages where provided (should mirror the design)
+    - for example: if there is a reducedPrice available, show the reduced price and the original price striked through
 
+- **Update the UI meaningfully**
+  - for example, the button "add to bookmarks" (or the bookmark icon) need to change wether the product is already bookmarked or not. You can take a look into custom events for that, if you want to.
 - **Make sure that all data from the design is displayed on your page - design doesn't have to match 1:1**
 - **Make sure to add empty states and handle errors gracefully. Add try-again buttons to all error states.**
 
@@ -153,6 +156,8 @@ Include a `README.md` describing:
 This can help you to render things through JS more easily (instead of having to create everything with DOM Nodes in your JS)
 
 - use the icons given to you in the base assets, transform them into an iconfont (as shown in the lecture) and use them in your code that way (grants bonuspoints)
+
+- custom events could help you in some cases -> window.dispatchEvent(new CustomEvent(...))
 
 ## Submission Checklist
 

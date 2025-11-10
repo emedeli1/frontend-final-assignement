@@ -9,6 +9,7 @@ Build a Single Page Application (SPA) that allows users to browse, search, and v
 https://gitlab.mediacube.at/fhs47785/frontend-final-assignment
 
 ### 0.1 Design/Page Structure
+
 todo: add link
 
 ### 1. Tooling & Project Setup
@@ -112,6 +113,44 @@ Include a `README.md` describing:
 - Include deployment link in the README.
 
 ## Hints & Tips
+
+- Take a look at the template component for rendering
+
+```html
+<!-- Template with placeholders -->
+<template id="code-block-template">
+  <article class="code-wrapper">
+    <h3 class="title">TITLE_PLACEHOLDER</h3>
+    <pre><code class="language-js">CODE_PLACEHOLDER</code></pre>
+    <p class="description">DESC_PLACEHOLDER</p>
+  </article>
+</template>
+
+<script>
+  const template = document.getElementById("code-block-template");
+  const output = document.getElementById("output");
+
+  function renderCodeBlock({ title, code, description }) {
+    const clone = template.content.cloneNode(true);
+
+    clone.querySelector(".title").textContent = title;
+    clone.querySelector("code").textContent = code;
+    clone.querySelector(".description").textContent = description;
+
+    output.appendChild(clone);
+  }
+
+  renderCodeBlock({
+    title: "Simple greeting function",
+    code: `function greet(name) {
+  return "Hello " + name;
+}`,
+    description: "This snippet shows a tiny reusable function.",
+  });
+</script>
+```
+
+This can help you to render things through JS more easily (instead of having to create everything with DOM Nodes in your JS)
 
 ## Submission Checklist
 

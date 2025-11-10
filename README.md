@@ -1,11 +1,15 @@
 # Final Assignment: Single Page Application (SPA) Ticketshop
 
-Build a Single Page Application (SPA) that allows users to browse, search, and view details from a provided content API.
+Build a Single Page Application (SPA) that allows users to browse, search, and view details from a ticket API.
 
 ## Requirements
 
 ### 0. Fork gitlab repo
+
 https://gitlab.mediacube.at/fhs47785/frontend-final-assignment
+
+### 0.1 Design/Page Structure
+todo: add link
 
 ### 1. Tooling & Project Setup
 
@@ -15,11 +19,12 @@ https://gitlab.mediacube.at/fhs47785/frontend-final-assignment
   - **ESLint** and **Prettier** for linting and formatting.
   - **EditorConfig** for consistent editor settings.
   - (Optional) **TailwindCSS** or **PostCSS** for styling.
+  - (Optional) you can use Typescript if you want to.
 
 ### 2. SPA Routing (Manual, no libraries)
 
 - Implement **client-side routing** yourself using the History API (`pushState`, `popstate`).
-- Implement at least **three routes/views**:
+- Implement **three routes/views**:
   - **Portal page** (featured content)
   - **Overview/List page** (with pagination)
   - **Detail page**
@@ -42,8 +47,9 @@ https://gitlab.mediacube.at/fhs47785/frontend-final-assignment
 ### 5. Browser Data Persistence
 
 - Use **localStorage** or **sessionStorage** to save data where appropriate.
-- Display stored data in the Home or a dedicated view.
+  - For example for bookmarks/favourites/... in the dedicated sidebar.
 - Allow users to revisit or delete this stored information.
+  - Clear bookmarks/favourites/...
 
 ### 6. Features
 

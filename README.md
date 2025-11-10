@@ -4,6 +4,9 @@ Build a Single Page Application (SPA) that allows users to browse, search, and v
 
 ## Requirements
 
+### 0. Fork gitlab repo
+https://gitlab.mediacube.at/fhs47785/frontend-final-assignment
+
 ### 1. Tooling & Project Setup
 
 - Set up a fresh frontend environment using **Vite**.

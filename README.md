@@ -25,10 +25,11 @@ todo: add link
 ### 2. SPA Routing (Manual, no libraries)
 
 - Implement **client-side routing** yourself using the History API (`pushState`, `popstate`).
-- Implement **three routes/views**:
+- Implement **four routes/views**:
   - **Portal page** (featured content)
   - **Overview/List page** (with pagination)
   - **Detail page**
+  - **Bookmarks** (displaying the bookmarked products saved in localstorage)
 
 ### 3. API Integration
 
@@ -51,7 +52,7 @@ todo: add link
 ### 5. Browser Data Persistence
 
 - Use **localStorage** or **sessionStorage** to save data where appropriate.
-  - For example for bookmarks/favourites/... in the dedicated sidebar.
+  - For example for bookmarks/favourites/....
 - Allow users to revisit or delete this stored information.
   - Clear bookmarks/favourites/...
 
@@ -63,7 +64,7 @@ todo: add link
 
 - **Bookmark list**
 
-  - Show references to all bookmarked items
+  - Show references to all bookmarked items on a seperate page
 
 - **Portal Page with Featured Teasers**
 

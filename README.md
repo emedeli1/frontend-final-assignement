@@ -105,4 +105,4 @@ Include a `README.md` describing:
 - Documentation as described above
 - Working demo (via Vite dev server or deployed)
 - Clear run instructions
-- **Link to Repo and Link to deployed page submitted in Moodle Assignment**
+- <span style="background-color:#c1121f; color: white; padding: 2px;">**Link to Repo and Link to deployed page submitted in Moodle Assignment**</span>

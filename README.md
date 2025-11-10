@@ -34,7 +34,10 @@ todo: add link
 - Use the **API provided here: https://github.com/j-handlechner/ticket-fake-api**.
 - Implement **asynchronous API fetching** for list and detail data (using Promises/async/await).
 - For the **portal page**, fetch **only items marked `isFeatured`**.
-- Implement **pagination** for overview/list pages and **only fetch the items needed per page**.
+- Implement **pagination** for overview/list pages and **only fetch the items needed per page** (max 12 per page)
+  - pagination should work by both clicking on the arrows and the numbers.
+  - style the active number different than the not-active ones
+  - use the meta field in the api for finding out how many ticket products there are in total and render the pagination based on that (one page should show 12 items)
 - Show both **loading** and **error** states.
 
 ### 4. Loading Skeletons and Error Handling
@@ -107,6 +110,8 @@ Include a `README.md` describing:
 
 - Deploy the application to a public hosting platform such as **Netlify**, **Vercel**, or similar.
 - Include deployment link in the README.
+
+## Hints & Tips
 
 ## Submission Checklist
 

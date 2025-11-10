@@ -26,7 +26,7 @@ https://gitlab.mediacube.at/fhs47785/frontend-final-assignment
 
 ### 3. API Integration
 
-- Use the **API provided by the instructor**.
+- Use the **API provided here: https://github.com/j-handlechner/ticket-fake-api**.
 - Implement **asynchronous API fetching** for list and detail data (using Promises/async/await).
 - For the **portal page**, fetch **only items marked `isFeatured`**.
 - Implement **pagination** for overview/list pages and **only fetch the items needed per page**.

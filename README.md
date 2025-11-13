@@ -65,7 +65,7 @@ todo: add link
 
 ### 6. UI & UX
 
-- Ensure functional navigation, loading feedback, and error handling.
+- Ensure functional navigation and loading feedback.
 - Use CSS/Tailwind for styling as desired, prioritizing **usability and feedback**.
 
 ### 7. Documentation / Validation

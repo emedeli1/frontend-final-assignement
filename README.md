@@ -47,7 +47,7 @@ todo: add link
 - Display **loading skeletons or placeholders** during API requests.
 - Implement **error states for failed API calls. Simulate ~10% failures even when the API is working.**
   - https://en.wikipedia.org/wiki/Fault_injection
-- Handle these errors gracefully, show error states and a **“Try Again”** button in failed states.
+- Handle these errors gracefully, show error states and a **“Try Again”** button in failed states that lets the users fetch the data again.
 
 ### 5. Browser Data Persistence
 

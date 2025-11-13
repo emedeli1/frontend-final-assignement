@@ -10,7 +10,7 @@ https://gitlab.mediacube.at/fhs47785/frontend-final-assignment
 
 ### 0.1 Design/Page Structure
 
-todo: add link
+https://www.figma.com/design/NWi8W3bxD9YcBbwW77Q15t/frontend-final-assignment?node-id=0-1&t=23qq3HaWoXHSon3v-1
 
 ### 1. Tooling & Project Setup
 

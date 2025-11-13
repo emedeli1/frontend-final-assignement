@@ -25,11 +25,10 @@ todo: add link
 ### 2. SPA Routing (Manual, no libraries)
 
 - Implement **client-side routing** yourself using the History API (`pushState`, `popstate`).
-- Implement **four routes/views**:
+- Implement **three routes/views**:
   - **Portal page** (featured content)
   - **Overview/List page** (with pagination)
   - **Detail page**
-  - **Bookmarks** (displaying the bookmarked products saved in localstorage)
 
 ### 3. API Integration
 
@@ -40,84 +39,48 @@ todo: add link
   - pagination should work by both clicking on the arrows and the numbers.
   - style the active number different than the not-active ones
   - use the meta field in the api for finding out how many ticket products there are in total and render the pagination based on that (one page should show 12 items)
-- Show both **loading** and **error** states.
+- Show loading states
 
-### 4. Loading Skeletons and Error Handling
-
-- Display **loading skeletons or placeholders** during API requests.
-- Implement **error states for failed API calls. Simulate ~10% failures even when the API is working.**
-  - https://en.wikipedia.org/wiki/Fault_injection
-- Handle these errors gracefully, show error states and a **“Try Again”** button in failed states that lets the users fetch the data again.
-
-### 5. Browser Data Persistence
-
-- Use **localStorage** or **sessionStorage** to save data where appropriate.
-  - For example for bookmarks/favourites/....
-- Allow users to revisit or delete this stored information.
-  - Clear bookmarks/favourites/...
-
-### 6. Features
-
-- **Bookmark teasers**
-
-  - Allow users to bookmark any teaser and view a list of their saved items.
-
-- **Bookmark list**
-
-  - Show references to all bookmarked items on a seperate page
+### 4. Features
 
 - **Portal Page with Featured Teasers**
-
   - Display only the teasers marked as featured.
   - Fetch only the data needed for the current page.
 
 - **Overview/List Pages with Pagination**
-
   - Show 10 teasers per page.
   - Fetch only the data needed for the current page.
 
 - **Detail Pages**
-
   - Display full details when clicking on a teaser from the portal or overview pages. (should mirror the design)
 
 - **Complete Data Display**
-
   - Show all available information for each teaser and on detail pages where provided (should mirror the design)
     - for example: if there is a reducedPrice available, show the reduced price and the original price striked through
 
-- **Update the UI meaningfully**
-  - for example, the button "add to bookmarks" (or the bookmark icon) need to change wether the product is already bookmarked or not. You can take a look into custom events for that, if you want to.
-- **Make sure that all data from the design is displayed on your page - design doesn't have to match 1:1**
-- **Make sure to add empty states and handle errors gracefully. Add try-again buttons to all error states.**
-
-### 7. Code Structure
+### 5. Code Structure
 
 - Use JavaScript modules (`import`/`export`) and logical code organization (routing, API, UI).
 - Demonstrate awareness of **scoping and module patterns**.
 
-### 8. UI & UX
+### 6. UI & UX
 
 - Ensure functional navigation, loading feedback, and error handling.
 - Use CSS/Tailwind for styling as desired, prioritizing **usability and feedback**.
 
-### 9. Documentation / Validation
-
+### 7. Documentation / Validation
 Include a `README.md` describing:
 
 - Project setup (tools, running instructions)
 - SPA routing logic
-- API integration and error simulation
-- Browser persistence (what, why, and how)
-- Loading and error states (with screenshots)
+- API integration and loading states
 - **Major problems encountered and learnings**
 
-### 10. Deployment
-
+### 8. Deployment
 - Deploy the application to a public hosting platform such as **Netlify**, **Vercel**, or similar.
 - Include deployment link in the README.
 
 ## Hints & Tips
-
 - Take a look at the template component for rendering
 
 ```html
@@ -160,10 +123,11 @@ This can help you to render things through JS more easily (instead of having to 
 
 - custom events could help you in some cases -> window.dispatchEvent(new CustomEvent(...))
 
+- Take a look at the documentation of the api, only fetch what you need on each page
+
 ## Submission Checklist
 
 - Source code in a public or private repository with correct permissions set for me to view
 - Documentation as described above
 - Working demo 
-- Clear run instructions
 - <span style="background-color:#c1121f; color: white; padding: 2px;">**Link to Repo and Link to deployed page submitted in Moodle Assignment**</span>

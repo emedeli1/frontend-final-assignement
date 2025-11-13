@@ -164,6 +164,6 @@ This can help you to render things through JS more easily (instead of having to 
 
 - Source code in a public or private repository with correct permissions set for me to view
 - Documentation as described above
-- Working demo (via Vite dev server or deployed)
+- Working demo 
 - Clear run instructions
 - <span style="background-color:#c1121f; color: white; padding: 2px;">**Link to Repo and Link to deployed page submitted in Moodle Assignment**</span>

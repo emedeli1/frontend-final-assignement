@@ -66,7 +66,7 @@ todo: add link
 ### 6. UI & UX
 
 - Ensure functional navigation and loading feedback.
-- Use CSS/Tailwind for styling as desired, prioritizing **usability and feedback**.
+- Use CSS/Tailwind for styling as desired, somewhat adhere to the design
 
 ### 7. Documentation / Validation
 Include a `README.md` describing:

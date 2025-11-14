@@ -19,8 +19,8 @@ https://www.figma.com/design/NWi8W3bxD9YcBbwW77Q15t/frontend-final-assignment?no
 - Add and configure at least:
   - **ESLint** and **Prettier** for linting and formatting.
   - **EditorConfig** for consistent editor settings.
-  - (Optional) **TailwindCSS** or **PostCSS** for styling.
-  - (Optional) you can use Typescript if you want to.
+  - (Optional) **TailwindCSS** and/or **PostCSS**
+  - (Optional) you can use Typescript if you want to
 
 ### 2. SPA Routing (Manual, no libraries)
 

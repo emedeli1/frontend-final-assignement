@@ -79,6 +79,8 @@ Include a `README.md` describing:
 ### 8. Deployment
 - Deploy the application to a public hosting platform such as **Netlify**, **Vercel**, or similar.
 - Include deployment link in the README.
+- Show me how you handle the proxy (redirecting all requests to index.html)
+-- for example, instructions on how to do that with netlify: https://docs.netlify.com/manage/routing/redirects/rewrites-proxies/#history-pushstate-and-single-page-apps
 
 ## Hints & Tips
 - Take a look at the template component for rendering

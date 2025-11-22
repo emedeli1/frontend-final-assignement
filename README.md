@@ -48,7 +48,7 @@ https://www.figma.com/design/NWi8W3bxD9YcBbwW77Q15t/frontend-final-assignment?no
   - Fetch only the data needed for the current page.
 
 - **Overview/List Pages with Pagination**
-  - Show 10 teasers per page.
+  - Show 12 teasers per page.
   - Fetch only the data needed for the current page.
 
 - **Detail Pages**

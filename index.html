@@ -3,11 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css"  />
+    <link rel="stylesheet" href="/src/assets/fonts/webfont.css" />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-  </body>
+    <header
+      class="absolute top-0 left-0 w-full z-20 flex justify-between items-center p-8"
+    >
+      <div class="font-bold text-sm uppercase tracking-tighter">
+        <a href="/" data-link>Tollershop</a>
+      </div>
+      <nav>
+        <a
+          href="/products"
+          data-link
+          class="font-medium text-base underline decoration-1 underline-offset-4 inline-block hover:scale-105 transition-transform"
+          >Ticket Overview</a
+        >
+      </nav>
+    </header>
 
-  <script type="module" src="/src/main.js"></script>
+    <main id="app"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>

@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+  /* Definimos la familia de fuentes predeterminada */
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+:root {
+  /* Opcional: Asegurarte de que el body la use globalmente */
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -96,3 +109,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+  */

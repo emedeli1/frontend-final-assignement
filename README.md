@@ -42,8 +42,6 @@ The project follows a component-based approach to keep the UI consistent.
 * **ESLint and prettier Configuration**: I initially struggled with ESLint and prettier installation, but after a few tries and some Google research I finally solved it
 * **Understangin TailwindCSS**: It was my first time using a CSS framework, so I was not sure about the installation or the usage. Luckily I found a great tutorial (in spanish) on youtube: https://www.youtube.com/watch?v=R5EXap3vNDA&t=10s.
 I got to say that in the end I loved it, I will use it in my future projects for sure!
-
-
 ## Running the Project
 ```bash
 # Install dependencies
@@ -51,3 +49,25 @@ npm install
 
 # Start development server
 npm run dev
+```
+## 6. Deployment & Asset Management
+
+The application is successfully deployed on **Netlify**.
+
+* **Live Demo**: https://ski-spa.netlify.app/
+
+### Deployment Process
+1. **Build Execution**: I used `npm run build` to generate the `dist` folder, which contains the optimized and minified version of the code.
+2. **Netlify Integration**: The project was deployed by connecting the GitHub repository to Netlify, configuring the build command as `npm run build` and the publish directory as `dist`.
+
+### Asset Handling (The Image Problem)
+During deployment, I encountered an issue where local images in the `base-assets` folder were not rendering.
+* **Problem**: Standard relative paths in JavaScript strings (like `./base-assets/image.png`) are not automatically processed by Vite's build tool, leading to 404 errors in production.
+* **Solution**: I implemented a **JavaScript Import** in `portal.js`. By using `import heroImage from '../base-assets/image.png'`, I forced Vite to include the asset in the final bundle, assign it a unique hash for caching, and provide the correct production URL.
+
+### SPA Proxy & Redirects
+To support the **History API** and prevent 404 errors when a user refreshes the browser on a sub-route (e.g., `/products` or `/product/1`):
+* **Configuration**: I created a `_redirects` file inside the `public` folder.
+* **Rule**: `/* /index.html 200`
+* **Result**: This ensures that Netlify redirects all requests back to `index.html`, allowing my JavaScript router to handle the path and render the correct view without a page reload.
+

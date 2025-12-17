@@ -1,5 +1,6 @@
 import { fetchTickets } from '../api/tickets.js';
 import { renderTicketCard } from '../components/ticketCard.js';
+import heroImage from '../../base-assets/image.png';
 
 export async function renderPortal() {
   const app = document.getElementById('app');
@@ -12,7 +13,7 @@ export async function renderPortal() {
     app.innerHTML = `
       <section class="mb-32">
         <div class="h-[500px] w-full">
-          <img src="./base-assets/image.png" class="w-full h-full object-cover" alt="Ski Resort" />
+          <img src="${heroImage}" class="w-full h-full object-cover" alt="Ski Resort" />
         </div>
         <div class="-mt-32 text-center px-4">
           <h1 class="text-[196px] font-medium leading-none tracking-tighter mb-4">Ticketshop</h1>

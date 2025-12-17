@@ -22,7 +22,7 @@ export function renderTicketCard(ticket) {
           <div class="text-base font-medium">from ${ticket.priceReduced || ticket.price}.00 €</div>
           <div class="flex items-center gap-1">
             <div class="bg-gray-200 flex items-center justify-center rounded-full w-7 h-7 hover:scale-105 transition-transform cursor-pointer">
-              <img src="./base-assets/bookmark.svg" class="svg-black rounded-full w-5 h-5" alt="icon" />
+                <i class="webfont webfont-bookmark" alt="Previous"></i>
             </div>
             <a href="/product/${ticket.id}" data-link class="bg-black rounded-full text-[10px] font-medium text-white py-1.5 px-2.5 hover:scale-105 transition-transform">
               See Details
